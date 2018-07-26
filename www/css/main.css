@@ -1,0 +1,72 @@
+body {
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 36px 40px 0 40px;
+}
+/*header and navigation*/
+.top-menu {
+  -webkit-padding-start: unset;
+  padding-left: 0px;
+
+}
+.logo {
+  max-width: 108px;
+  max-height: 27px;
+}
+.navlink {
+  list-style-type: none;
+  margin: 0 26px 0 26px;
+  max-height: 27px
+}
+.navlink:first-child {
+  margin-left: 0;
+}
+.navlink a {
+  color: #333333;
+  line-height: 24px;
+  opacity: 0.6;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navlink .active , .navlink .logo {
+  opacity: 1;
+}
+.flex {
+  display: flex;
+}
+/* workzone */
+.dashboard {
+  border-top-color: #F0F0F0;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+/* footer */
+.bot-menu {
+  display: flex;
+  height: 64px;
+}
+.bot-menu ul {
+  list-style-type: none;
+  margin-bottom: 27px;
+  margin-top: 22px;
+}
+.links {
+  padding-left: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 404px
+}
+.bot-menu a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #858585;
+  letter-spacing: 0.01px;
+  text-align: left;
+  text-decoration: none;
+}
+.copyright {
+  display: inline-flex;
+  margin-left: auto;
+}
