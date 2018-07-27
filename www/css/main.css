@@ -4,10 +4,18 @@ body {
   box-sizing: border-box;
   margin: 36px 40px 0 40px;
 }
+ul {
+  list-style: none;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
 /*header and navigation*/
 .top-menu {
   -webkit-padding-start: unset;
   padding-left: 0px;
+  display: flex;
 
 }
 .logo {
@@ -26,29 +34,83 @@ body {
   color: #333333;
   line-height: 24px;
   opacity: 0.6;
-  text-decoration: none;
   font-size: 16px;
   font-weight: bold;
 }
 .navlink .active , .navlink .logo {
   opacity: 1;
 }
-.flex {
-  display: flex;
-}
 /* workzone */
 .dashboard {
   border-top-color: #F0F0F0;
   border-top-width: 1px;
   border-top-style: solid;
+  display: flex;
+  margin-top: 33px;
 }
+.main-block {
+  margin-top: 29px;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 26px;
+}
+.board {
+  /* flex-basis: content; */
+  width: 630px;
+  height: 331px;
+  background-image: url('../img/bg@1x.png');
+  background-size: cover;
+}
+.board h1 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+}
+.grid {
+  margin-top: 26px;
+  margin-left: 25px;
+}
+.grid h2 {
+  font-weight: bold;
+  font-size: 27px;
+  color: #333333;
+  margin: 0 0 6px 0;
+}
+.notify {
+  font-size: 14px;
+  color: #333333;
+  margin: 0 0 25px 0;
+}
+.weather {
+  display: inline-flex;
+}
+.weather ul {
+  display: inline-flex;
+  flex-direction: column;
+}
+.location {
+  font-size: 14px;
+  color: #858585;
+  margin: 0 0 6px 0;
+}
+.temp {
+  margin: 0;
+  font-size: 36px;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: left;
+}
+.out::after {
+  content: url('../img/cloud-drizzle.png');
+  margin-left: 5px;
+}
+
 /* footer */
 .bot-menu {
   display: flex;
   height: 64px;
 }
 .bot-menu ul {
-  list-style-type: none;
   margin-bottom: 27px;
   margin-top: 22px;
 }
@@ -56,7 +118,7 @@ body {
   padding-left: 0;
   display: inline-flex;
   justify-content: space-between;
-  width: 404px
+  flex-basis: 404px
 }
 .bot-menu a {
   font-size: 12px;
@@ -64,7 +126,6 @@ body {
   color: #858585;
   letter-spacing: 0.01px;
   text-align: left;
-  text-decoration: none;
 }
 .copyright {
   display: inline-flex;
