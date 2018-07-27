@@ -26,43 +26,50 @@
       </ul>
     </nav>
   </header>
-  <section class='dashboard'>
+  <div class='dashboard'>
     <div class='main-block'>
-        <h1>Главное</h1>
-      <div class='board'>
-        <div class='grid'>
-          <div>
+      <h1>Главное</h1>
+        <div class='board-grid'>
+          <div class='board-header'>
             <h2>Привет, Геннадий!</h2>
             <div class='notify'>
                 Двери и окна закрыты, сигнализация включена.
             </div>
+            <div class='weather'>
+                <ul>
+                  <li class='location'>Дома</li>              
+                  <li class='temp'>+23</li>
+                </ul>
+                <ul>
+                  <li class='location'>За окном</li>
+                  <li class='temp out'>+19</li>
+                </ul>
+              </div>
           </div>
-          <div class='weather'>
-            <ul>
-              <li class='location'>Дома</li>              
-              <li class='temp'>+23</li>
-            </ul>
-            <ul>
-              <li class='location'>За окном</li>
-              <li class='temp out'>+19</li>
-            </ul>
-          </div>
-          </div>
-          <div class='carousell'>
-            <div class='carousell-box'></div>
-            <div class='carousell-box'></div>
-            <div class='carousell-box'></div>
+          <div class='board-card-container'>
+              <div class='card'>
+                  <img class='icon' src='./img/icon_temperature@1x.png'>
+                  <div>
+                      <div class='task'>Philips Cooler</div>
+                      <div class='info'>Начнет охлаждать в 16:30</div>
+                  </div>
+              </div>
+              <div class='card'>
+                  <img class='icon' src='./img/icon_sun@1x.png'>
+                  <div>
+                      <div class='task'>Xiaomi Yeelight LED Smart Bulb</div>
+                      <div class='info'>Включится в 17:00</div>
+                  </div>
+              </div>
           </div>
         </div>
       </div>
       <div class='scenarios'>
-          <!--избранные сценарии-->
-        </div>
+        <h2>Избранные сценарии</h2>
+      </div>
     </div>
-    <div>
-      <!--избранные устройства-->
-    </div>
-  </section>
+    <div class='my-devices'></div>
+  </div>
   <footer class='bot-menu'>
       <ul class='links'>
         <li>
