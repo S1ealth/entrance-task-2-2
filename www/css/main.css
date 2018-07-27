@@ -1,5 +1,4 @@
 body {
-  background: white;
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +53,6 @@ header {
   border-top-style: solid;
   display: flex;
   margin-top: 33px;
-  flex-basis: 100%;
 }
 /* main block */
 .main-block {
@@ -71,7 +69,6 @@ header {
 }
 .board-grid {
   margin-top: 26px;
-  margin-left: 25px;
   background-image: url('../img/bg@1x.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,6 +121,11 @@ header {
   display: flex;
   flex-direction: column;
 }
+.board-card-container .last {
+  margin: 0;
+  flex-basis: 0;
+  height: 41px;
+}
 .card {
   background: #F7F7F7;
   border-radius: 20px;
@@ -133,6 +135,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.on {
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
+  border-radius: 20px;
 }
 .card .task {
   font-size: 14px;
@@ -155,6 +162,13 @@ header {
 .scenarios {
   margin-top: 29px;
   margin-left: 0;
+}
+.scenarios-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.scenarios-grid .card {
+  margin: 15px;
 }
 /* footer */
 .bot-menu {
