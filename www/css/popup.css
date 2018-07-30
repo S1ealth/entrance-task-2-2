@@ -14,13 +14,28 @@
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background: #FFFFFF;
+  border-radius: 20px;
   margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  /* padding: 20px; */
+  width: 630px;
+  height: 238px;
 }
-
+.modal-header {
+  padding: 26px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap
+}
+.modal-header .icon {
+  align-self: center;
+}
+.modal-content h2 {
+  font-size: 27px;
+  color: #333333;
+  font-weight: bold;
+  flex-basis: 80%;
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;

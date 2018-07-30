@@ -6,6 +6,7 @@
   <title>Яндекс дом</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css' />
+  <link rel='stylesheet' type='text/css' media='screen' href='./css/popup.css' />
 </head>
 <body>
   <header>
@@ -152,8 +153,26 @@
         <button class="btn" onclick="filterSelection('cameras')">Камеры</button>
       </div>
     </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class='modal-header'>
+            <h2>Xiaomi Yeelight LED Smart Bulb</h2>
+            <img class='icon' src='./img/icon_sun_2@1x.png'>
+            <span class='info'>Включится в 17:00</span>
+            <div>
+                <button class="btn selected">Вручную</button>
+                <button class="btn"> Дневной свет</button>
+                <button class="btn">Вечерний свет</button>
+                <button class="btn">Рассвет</button>
+            </div>
+        </div>
+        <p></p>
+      </div>
+    
+    </div>
     <div class="devices">
-        <div class='filterDiv card kitchen'>
+        <div class='filterDiv card kitchen' id='myBtn'>
             <img class='icon' src='./img/icon_sun_2@1x.png'>
             <div class='task'>Xiaomi Yeelight LED Smart Bulb</div>
             <div class='info'>Включено</div>
