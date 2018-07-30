@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 /*header and navigation*/
-header, footer, .dashboard, .scenarios {
+header, footer, .dashboard {
   margin: 0 40px;
 }
 header {
@@ -163,12 +163,34 @@ header {
   margin-top: 29px;
   margin-left: 0;
 }
+.slider-arrow {
+  display: flex;
+  justify-content: space-between;
+}
+.slider-arrow ul {
+  display: inline-flex;
+  align-self: center;
+}
+.slider-arrow li {
+  width: 9px;
+  height: 14px;
+  margin: 0 10px;
+}
+.scenarios .left {
+  background-image: url('../img/M_Copy@1x.png');
+}
+.scenarios .right {
+  background-image: url('../img/M_Copy@1x.png');
+  flex-basis: 9px;
+  transform: rotate(180deg);
+}
 .scenarios-grid {
   display: flex;
   flex-wrap: wrap;
 }
 .scenarios-grid .card {
   margin: 15px;
+  flex-basis: 160px;
 }
 /* footer */
 .bot-menu {
